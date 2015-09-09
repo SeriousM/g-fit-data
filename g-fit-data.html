@@ -1,0 +1,24 @@
+<head>
+  <title>g-fit-data</title>
+</head>
+
+<body>
+  {{> loginButtons}}
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+
+  {{#if currentUser}}
+  <div>
+    Hello {{currentUser.profile.name}}
+  </div>
+  <div>
+    Your Google access Token is: {{currentUser.services.google.accessToken}}
+  </div>
+  {{/if}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>

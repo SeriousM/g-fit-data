@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "node-google-fit": {
+      "version": "0.0.3"
+    }
+  }
+}
